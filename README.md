@@ -1,74 +1,112 @@
-# FoodSpot 🍽️
+# 🍽️ FoodSpot
 
-**Guia gastronômico responsivo** para descobrir restaurantes fictícios, explorar culinárias e salvar favoritos. Projeto demonstrativo de frontend desenvolvido com HTML, CSS e JavaScript, sem backend.
+**Guia gastronômico responsivo** para descobrir restaurantes fictícios, explorar diferentes culinárias e salvar favoritos.
+
+Projeto demonstrativo de frontend desenvolvido com **HTML5, CSS3 e JavaScript**, sem necessidade de backend.
 
 ## 🔗 Acessar o projeto
 
-- **[Ver demonstração (GitHub Pages)](https://jefersonalvesrs.github.io/FoodSpot/)** — disponível após publicar o repositório e ativar o GitHub Pages.
-- **[Repositório no GitHub](https://github.com/JefersonAlvesrs/FoodSpot)** — disponível após criar o repositório.
+- 🌐 **[Visualizar site — GitHub Pages](https://jefersonalvesrs.github.io/FoodSpot/)**
 
 ## ✨ Funcionalidades
 
 - Catálogo de seis restaurantes fictícios com imagens e descrições
 - Pesquisa por nome, culinária, bairro e descrição
-- Filtros por categoria e ordenação por avaliação ou preço
-- Favoritos persistidos no navegador com `localStorage`
-- Janela de detalhes de cada restaurante
-- Menu responsivo e navegação adaptada para dispositivos móveis
+- Filtros por categoria gastronômica
+- Ordenação por avaliação e preço
+- Sistema de favoritos utilizando `localStorage`
+- Janela interativa com detalhes dos restaurantes
+- Menu de navegação responsivo
+- Interface adaptada para computadores, tablets e celulares
 
-## 🛠️ Tecnologias
+## 🛠️ Tecnologias utilizadas
 
-- **HTML5** — estrutura semântica
-- **CSS3** — layout responsivo com Flexbox, Grid e media queries
-- **JavaScript** — filtros, pesquisa, favoritos, modal e interações
-- **Google Fonts** — tipografia (requer conexão para carregar as fontes externas)
+- **HTML5** — estruturação semântica das páginas
+- **CSS3** — estilização, Flexbox, Grid e responsividade
+- **JavaScript** — pesquisa, filtros, favoritos e interatividade
+- **LocalStorage** — armazenamento local dos restaurantes favoritos
+- **Google Fonts** — tipografia personalizada
 
-As fotografias ilustrativas estão armazenadas localmente em `assets/images/`.
+As fotografias ilustrativas estão armazenadas localmente na pasta `assets/images/`.
 
 ## 📸 Capturas de tela
 
 ### Página inicial
+
 ![Página inicial do FoodSpot](screenshots/01-pagina-inicial.png)
 
 ### Catálogo de restaurantes
-![Catálogo com cartões dos restaurantes](screenshots/02-catalogo-restaurantes.png)
+
+![Catálogo de restaurantes do FoodSpot](screenshots/02-catalogo-restaurantes.png)
 
 ### Versão mobile
-![FoodSpot em tela de celular](screenshots/05-versao-mobile.png)
+
+![Versão responsiva do FoodSpot](screenshots/05-versao-mobile.png)
 
 ### Sobre o projeto
-![Seção institucional](screenshots/03-sobre-o-projeto.png)
+
+![Seção institucional do FoodSpot](screenshots/03-sobre-o-projeto.png)
 
 ### Rodapé
-![Rodapé com crédito do desenvolvedor](screenshots/04-rodape.png)
 
-## 🚀 Executar localmente
+![Rodapé do FoodSpot](screenshots/04-rodape.png)
 
-1. Clone o repositório: `git clone https://github.com/JefersonAlvesrs/FoodSpot.git`
-2. Abra a pasta `FoodSpot`.
-3. Abra `index.html` no navegador ou use a extensão **Live Server** no VS Code.
+## 🚀 Como executar localmente
+
+1. Clone o repositório:
+
+   `git clone https://github.com/JefersonAlvesrs/FoodSpot.git`
+
+2. Abra a pasta `FoodSpot` no Visual Studio Code.
+3. Execute o arquivo `index.html` diretamente no navegador ou utilizando a extensão **Live Server**.
 
 Não é necessário instalar dependências ou configurar um servidor.
 
-## 📁 Estrutura
+## 📁 Estrutura do projeto
 
 ```text
 FoodSpot/
 ├── assets/
-│   └── images/          # Fotografias locais dos restaurantes
-├── screenshots/         # Capturas para o README e portfólio
+│   └── images/
+├── screenshots/
+│   ├── 01-pagina-inicial.png
+│   ├── 02-catalogo-restaurantes.png
+│   ├── 03-sobre-o-projeto.png
+│   ├── 04-rodape.png
+│   └── 05-versao-mobile.png
 ├── index.html
 ├── styles.css
 ├── script.js
 └── README.md
 ```
 
+## 🧪 Testes realizados
+
+- Navegação entre as seções
+- Pesquisa e filtros de restaurantes
+- Ordenação por avaliação e preço
+- Adição e remoção de favoritos
+- Exibição dos detalhes dos restaurantes
+- Funcionamento dos botões e interações
+- Verificação visual das versões desktop e mobile
+
+Os testes foram realizados manualmente.
+
 ## ℹ️ Observações
 
-Este é um **projeto fictício de portfólio**. Restaurantes, bairros, preços e avaliações são ilustrativos; não há reservas, pedidos ou pagamentos reais. As fotografias locais foram obtidas a partir das capturas de tela do protótipo, portanto sua nitidez é limitada pela resolução das capturas.
+Este é um **projeto fictício desenvolvido para portfólio**.
 
-O layout desktop e mobile e as principais interações foram conferidos manualmente. A versão hospedada deverá ser verificada após a publicação.
+Restaurantes, preços e avaliações são ilustrativos. O projeto não realiza reservas, pedidos ou pagamentos reais.
 
-## 👨‍💻 Autor
+As fotografias utilizadas foram armazenadas localmente a partir das capturas do protótipo, podendo apresentar limitações de resolução.
 
-Desenvolvido por **Jeferson Alves** — [GitHub](https://github.com/JefersonAlvesrs).
+## 👨‍💻 Desenvolvedor
+
+**Jeferson Alves**
+
+- [GitHub](https://github.com/JefersonAlvesrs)
+- [FoodSpot — demonstração online](https://jefersonalvesrs.github.io/FoodSpot/)
+
+---
+
+© 2026 FoodSpot — Projeto demonstrativo de frontend.
