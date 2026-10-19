@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <meta content="#ff7043" name="theme-color" />
+    <meta
+      content="FoodSpot: descubra restaurantes e sabores para sua próxima experiência."
+      name="description"
+    />
+    <title>FoodSpot | Descubra seu próximo sabor</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container nav">
+        <a aria-label="FoodSpot início" class="logo" href="#inicio">
+          <span class="logo-mark"> ✦ </span>
+          food
+          <span> spot </span>
+          <b> . </b>
+        </a>
+        <nav aria-label="Menu principal" id="menu">
+          <a href="#explorar"> Explorar </a>
+          <a href="#categorias"> Categorias </a>
+          <a href="#sobre"> Sobre </a>
+        </nav>
+        <a class="nav-cta" href="#explorar"> Encontrar restaurante ↗ </a>
+        <button
+          aria-expanded="false"
+          aria-label="Abrir menu"
+          class="menu-btn"
+          id="menuBtn"
+        >
+          ☰
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="hero" id="inicio">
+        <div class="container hero-grid">
+          <div>
+            <span class="eyebrow"> ✦ SEU PRÓXIMO LUGAR FAVORITO </span>
+            <h1>
+              Comida boa.
+              <br />
+              <em> Momentos </em>
+              <br />
+              melhores.
+            </h1>
+            <p>
+              Encontre restaurantes incríveis, explore novos sabores e descubra
+              aquele cantinho que combina com você.
+            </p>
+            <form class="hero-search" id="searchForm">
+              <span> ⌕ </span>
+              <input
+                aria-label="Buscar restaurantes"
+                id="heroSearch"
+                placeholder="Prato, restaurante ou culinária..."
+              />
+              <button type="submit">Explorar agora ↗</button>
+            </form>
+            <div class="hero-proof">
+              <div class="avatars">
+                <span> 😊 </span>
+                <span> 😎 </span>
+                <span> 🥰 </span>
+              </div>
+              <div>
+                <strong> Uma descoberta de cada vez </strong>
+                <small> Seu guia para comer bem </small>
+              </div>
+            </div>
+          </div>
+          <div class="hero-art">
+            <div
+              aria-label="Pizza artesanal com ingredientes frescos"
+              class="hero-photo"
+              role="img"
+            ></div>
+            <div class="floating top">
+              ⭐
+              <strong> 4,9 </strong>
+              <small> Experiências especiais </small>
+            </div>
+            <div class="floating bottom">
+              🍽️
+              <div>
+                <strong> Explore novos sabores </strong>
+                <small> Encontre seu favorito </small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section categories" id="categorias">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow"> PARA TODOS OS GOSTOS </span>
+              <h2>
+                O que vamos comer
+                <em> hoje? </em>
+              </h2>
+            </div>
+            <p>Escolha seu estilo favorito e descubra novas possibilidades.</p>
+          </div>
+          <div class="category-grid" id="categoryGrid"></div>
+        </div>
+      </section>
+      <section class="section explore" id="explorar">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow"> ESCOLHIDOS PARA VOCÊ </span>
+              <h2>
+                Explore lugares
+                <em> incríveis. </em>
+              </h2>
+            </div>
+            <p>
+              Uma seleção demonstrativa de restaurantes para inspirar sua
+              próxima saída.
+            </p>
+          </div>
+          <div class="toolbar">
+            <div
+              aria-label="Filtrar por categoria"
+              class="filters"
+              id="filters"
+            ></div>
+            <div class="sort">
+              <label for="sort"> Ordenar: </label>
+              <select id="sort">
+                <option value="featured">Destaques</option>
+                <option value="rating">Melhor avaliação</option>
+                <option value="priceAsc">Menor preço</option>
+                <option value="priceDesc">Maior preço</option>
+              </select>
+            </div>
+          </div>
+          <div class="restaurant-grid" id="restaurantGrid"></div>
+          <div class="empty" hidden="" id="empty">
+            <h3>Nenhum resultado encontrado</h3>
+            <p>Tente outro termo ou escolha outra categoria.</p>
+            <button id="clearSearch">Limpar filtros</button>
+          </div>
+        </div>
+      </section>
+      <section class="section story" id="sobre">
+        <div class="container story-grid">
+          <div class="story-art">
+            <img
+              alt="Ambiente aconchegante de restaurante"
+              loading="lazy"
+              src="assets/images/ambiente.webp"
+            />
+          </div>
+          <div>
+            <span class="eyebrow"> MAIS QUE UMA REFEIÇÃO </span>
+            <h2>
+              O melhor da vida acontece
+              <em> à mesa. </em>
+            </h2>
+            <p>
+              O FoodSpot nasceu como um conceito de guia gastronômico: uma
+              experiência simples e agradável para explorar restaurantes,
+              descobrir diferentes culinárias e escolher onde viver bons
+              momentos.
+            </p>
+            <div class="story-stats">
+              <div>
+                <strong> 06 </strong>
+                <span> lugares para explorar </span>
+              </div>
+              <div>
+                <strong> 06 </strong>
+                <span> estilos de culinária </span>
+              </div>
+            </div>
+            <a class="primary-link" href="#explorar">
+              Encontrar meu próximo lugar ↗
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="newsletter">
+        <div class="container newsletter-inner">
+          <div>
+            <span class="eyebrow"> BONS SABORES TE ESPERAM </span>
+            <h2>
+              Seu próximo favorito
+              <br />
+              está a um clique.
+            </h2>
+          </div>
+          <a href="#explorar"> Começar a explorar ↗ </a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>
+          <a class="logo" href="#inicio">
+            <span class="logo-mark"> ✦ </span>
+            food
+            <span> spot </span>
+            <b> . </b>
+          </a>
+          <p>Descubra sabores. Colecione momentos.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#inicio"> Início </a>
+          <a href="#categorias"> Categorias </a>
+          <a href="#explorar"> Restaurantes </a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>
+          ©
+          <span id="year"> </span>
+          FoodSpot. Projeto demonstrativo de portfólio. Restaurantes e
+          avaliações fictícios.
+        </span>
+        <a
+          href="https://github.com/JefersonAlvesrs"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Desenvolvido por Jeferson Alves ↗
+        </a>
+      </div>
+    </footer>
+    <dialog id="detailDialog">
+      <button
+        aria-label="Fechar detalhes"
+        class="dialog-close"
+        id="closeDialog"
+      >
+        ✕
+      </button>
+      <div id="dialogContent"></div>
+    </dialog>
+    <script src="script.js"></script>
+  </body>
+</html>
